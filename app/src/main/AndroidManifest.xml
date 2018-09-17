@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mny.appquickstart">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+
+        </activity>
+        <!--  android:theme="@style/SplashTheme"  有Splash页面 启动跳转到 Main-->
+        <!--  android:theme="@style/AppWelcome" 或者直接不用Splash界面 直接设置给Main(作为直接启动页)
+              但是main的layout布局背景色要设置白色 不然会出现叠加效果-->
+        <!--  android:theme="@style/AppWelcome1"-->
+        <activity android:name=".SplashActivity"
+            android:theme="@style/SplashTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
